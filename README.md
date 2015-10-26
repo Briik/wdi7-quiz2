@@ -16,8 +16,15 @@ the square brackets (for multiple-choice questions).
 Describe the purpose of a clearfix in CSS, and give an example of how to do it.
 
 Your Answer:
-```text
 ```
+Clearfix is used to force a parent CSS element to enclose its contents after they have been repositioned.
+in CSS file:
+clearfix:after, cf:after, .contain-floated-children:after{
+			Display: table;
+			Clear: both;
+			Content: ‘ ‘;}
+```
+
 
 ### Question #2
 
@@ -25,7 +32,7 @@ What does the following selector do?  `ul.dropdown > li`?
 
 Select 1:
 ```
-[] Selects all li's which are directly inside a ul of class dropdown (children)
+[X] Selects all li's which are directly inside a ul of class dropdown (children)
 [] Selects all li's which are anywhere inside a ul of class dropdown (any descendant)
 [] Selects all ul's of class dropdown, as well as the children elements that are li's
 [] Selects all ul's of class dropdown, only if their children are exclusively li's
@@ -38,7 +45,8 @@ Select 1:
 Describe the rules of scope in JavaScript.
 
 Your Answer:
-```text
+```
+Scope is similar to the "working directory" concept in the UNIX command line in that it refers to the availability of resources to the current task.  JavaScript's scope allows universal access to "global" variables - those defined outside of a function - but restricts access to downstream variables that are contained within functions.
 ```
 
 
@@ -51,7 +59,12 @@ the variable pizza inside your method.
 
 Your Answer:
 ```js
-// write code here
+var pizza = {
+  var temperature = 70;
+  function bake() {
+    temperature = 300;
+    };
+}
 ```
 
 ## Callbacks
@@ -64,7 +77,13 @@ argument. Finally, demonstrate calling `doSomething` with a function.**
 
 Your Answer:
 ```js
-// write code here
+function doSomething(thingToDo) {
+  stuffToDo;
+  function(thingToDo){
+    thingToDo = thingToDo + stuffToDo;
+    return thingToDo + stuffToDo;
+}
+doSomething();
 ```
 
 ### Question #6
@@ -75,7 +94,7 @@ Select all that apply:
 ```
 [] Synchronous code runs at an even pace, asynchronous code runs with uneven pacing.
 [] Synchronous code runs all at the same time, asynchronous code runs completely randomly
-[] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
+[X] Synchronous code runs in order (as appears in the source), asynchronous code may run at a later time.
 ```
 
 ## Git
@@ -90,7 +109,7 @@ Select 1:
 [] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] fork on github; git clone <ga_dc_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git push; create pull request
 [] git clone <ga_dc_url>; git branch <charlie_solution>; git add <files>; git commit; git push; create pull request
-[] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
+[X] fork on github; git clone <fork_url>; git checkout -b <charlie_solution>; git add <files>; git commit; git pull; create pull request
 ```
 
 ## jQuery
@@ -101,10 +120,10 @@ Which of the following statements will work, assuming jQuery is loaded?
 
 Select all that apply:
 ```
-[] `$(".post").css("background", "peachpuff")`
+[X] `$(".post").css("background", "peachpuff")`
 [] `$(".post").innerHTML`
-[] `$(".post").html()`
-[] `document.getElementsByClassName("post")[0].innerHTML`
+[X] `$(".post").html()`
+[X] `document.getElementsByClassName("post")[0].innerHTML`
 [] `document.getElementsByClassName("post").innerHTML`
 ```
 
@@ -116,7 +135,9 @@ body, that says "hello".
 
 Your Answer:
 ```js
-// your code here
+$("#greeting").on("click", function(){
+  $("body").after("p").html("hello");
+  });
 ```
 
 ## Software Development Processes
@@ -131,5 +152,5 @@ role, goal, and reason for each.
 Finally, link to your repo on github in the space below.
 
 Your Answer:
-```text
+```https://github.com/Briik/project1/blob/master/readme.txt
 ```
